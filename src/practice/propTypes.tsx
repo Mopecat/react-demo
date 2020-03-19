@@ -24,13 +24,18 @@ class Person extends React.Component<PersonProps> {
   };
   // 添加校验
   static propTypes = {
+    // string & 必填
     name: PropTypes.string.isRequired,
+    // oneof & 必填
     gender: PropTypes.oneOf(["male", "female"]).isRequired,
+    // array
     hobby: PropTypes.arrayOf(PropTypes.string),
+    // shape
     position: PropTypes.shape({
       x: PropTypes.number,
       y: PropTypes.number
     }),
+    // 自定义属性
     age(
       props: PersonProps,
       propName: string,
@@ -61,7 +66,7 @@ class Person extends React.Component<PersonProps> {
 let personProps: PersonProps = {
   name: "mopecat",
   gender: "male",
-  age: 26,
+  age: 126,
   hobby: ["football", "basketball"],
   position: {
     x: 100,
