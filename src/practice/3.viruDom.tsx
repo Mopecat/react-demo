@@ -1,5 +1,5 @@
-import React from "./lib/react";
-import ReactDom from "./lib/react-dom";
+import React from "../lib/react";
+import ReactDom from "../lib/react-dom";
 
 let style = { color: "red", fontSize: "25px" };
 // let element = (
